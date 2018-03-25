@@ -2,6 +2,8 @@
 
 // src/Entity/Ingredient.php
 
+namespace App\Entity;
+
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -77,117 +79,132 @@ class Ingredient
     private $proteins = null;
 
 
-    public getCode()
+    public function setCode($code)
+    {
+        $this->code = $code;
+    }
+
+    public function getCode()
     {
         return $this->code;
     }
 
-    public setName($name)
+    public function setName($name)
     {
         $this->name = $name;
     }
 
-    public getName()
+    public function getName()
     {
         return $this->name;
     }
 
-    public setGrpCode($grpCode)
+    public function setGrpCode($grpCode)
     {
         $this->grpCode = $grpCode;
     }
 
-    public getGrpCode()
+    public function getGrpCode()
     {
         return $this->grpCode;
     }
 
-    public setSubGrpCode($subGrpCode)
+    public function setSubGrpCode($subGrpCode)
     {
         $this->subGrpCode = $subGrpCode;
     }
 
-    public getSubGrpCode()
+    public function getSubGrpCode()
     {
         return $this->subGrpCode;
     }
     
-    public setSubSubGrpCode($subSubGrpCode)
+    public function setSubSubGrpCode($subSubGrpCode)
     {
         $this->subSubGrpCode = $subSubGrpCode;
     }
 
-    public getSubSubGrpCode()
+    public function getSubSubGrpCode()
     {
         return $this->subSubGrpCode;
     }
 
-    public setGrpNameFr($grpNameFr)
+    public function setGrpNameFr($grpNameFr)
     {
         $this->grpNameFr = $grpNameFr;
     }
 
-    public getGrpNameFr()
+    public function getGrpNameFr()
     {
         return $this->grpNameFr;
     }
 
-    public setSubGrpNameFr($subGrpNameFr)
+    public function setSubGrpNameFr($subGrpNameFr)
     {
         $this->subGrpNameFr = $subGrpNameFr;
     }
 
-    public getSubGrpNameFr()
+    public function getSubGrpNameFr()
     {
         return $this->subGrpNameFr;
     }
 
-    public setSubSubGrpNameFr($subSubGrpNameFr)
+    public function setSubSubGrpNameFr($subSubGrpNameFr)
     {
         $this->subSubGrpNameFr = $subSubGrpNameFr;
     }
 
-    public getSubSubGrpNameFr()
+    public function getSubSubGrpNameFr()
     {
         return $this->subSubGrpNameFr;
     }
 
-    public setEnergyUe($energyUe)
+    public function setEnergyUe($energyUe)
     {
         $this->energyUe = $energyUe;
     }
 
-    public getEnergyUe()
+    public function getEnergyUe()
     {
         return $this->energyUe;
     }
 
-    public setEnergyJonesKj($energyJonesKj)
+    public function setEnergyJonesKj($energyJonesKj)
     {
         $this->energyJonesKj = $energyJonesKj;
     }
 
-    public getEnergyJonesKcal()
+    public function getEnergyJonesKj()
+    {
+        return $this->energyJonesKj;
+    }
+
+    public function setEnergyJonesKcal($energyJonesKcal)
+    {
+        $this->energyJonesKcal = $energyJonesKcal;
+    }
+
+    public function getEnergyJonesKcal()
     {
         return $this->energyJonesKcal;
     }
 
-    public setWater($water)
+    public function setWater($water)
     {
         $this->water = $water;
     }
 
-    public getWater()
+    public function getWater()
     {
         return $this->water;
     }
 
-    public setProteins($proteins)
+    public function setProteins($proteins)
     {
         $this->proteins = $proteins;
     }
 
-    public getProteins()
+    public function getProteins()
     {
         return $this->proteins;
     }
