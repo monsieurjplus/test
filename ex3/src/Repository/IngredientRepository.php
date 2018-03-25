@@ -23,7 +23,7 @@ class IngredientRepository extends ServiceEntityRepository
             ->createQuery(
                 'SELECT i.code AS id, i.name AS name
                 FROM App\Entity\Ingredient i
-                WHERE (i.name LIKE :word)
+                WHERE (i.name LIKE :word OR i.grpNameFr LIKE :word)
                 ORDER BY i.name ASC'
             )
             ->setParameter('word', '%' . $word . '%');
