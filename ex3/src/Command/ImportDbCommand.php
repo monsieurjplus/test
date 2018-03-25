@@ -1,0 +1,23 @@
+<?php
+
+// src/Command/ImportDbCommand.php
+namespace App\Command;
+
+use Symfony\Component\Console\Command\Command;
+use Symfony\Component\Console\Input\InputInterface;
+use Symfony\Component\Console\Output\OutputInterface;
+
+class ImportDbCommand extends Command
+{
+    protected function configure()
+    {
+        $this
+            ->setName('app:import-db')
+            ->setDescription('Import DB from web DB');
+    }
+
+    protected function execute(InputInterface $input, OutputInterface $output)
+    {
+        
+    }
+}
